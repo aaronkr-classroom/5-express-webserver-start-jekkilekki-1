@@ -11,7 +11,12 @@ exports.respondWithName1 = (req, res) => {
 /**
  * Listing 10.3
  */
-exports.getHome = (req, res) => { res.render('index'); } // "/" index
+exports.getHome = (req, res) => { 
+    res.render('index', {
+        name: "Sarah",
+        
+    }); 
+} // "/" index
 // exports.getContact = (req, res) => {} // "/contact" GET method
 // exports.postContact = (req, res) => {} // "/contact" POST method
 
